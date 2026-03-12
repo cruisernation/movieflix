@@ -1,0 +1,121 @@
+:root {
+  --bg: #090d1f;
+  --panel: #101833;
+  --text: #f5f7ff;
+  --muted: #b3bfd9;
+  --accent: #84a9ff;
+  --accent-2: #78f0d8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 10% 10%, #1d2b60, var(--bg) 45%), var(--bg);
+}
+
+.page {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+.hero {
+  border: 1px solid #3b4e82;
+  background: linear-gradient(135deg, rgb(20 30 63 / 85%), rgb(15 22 47 / 90%));
+  border-radius: 24px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero__eyebrow {
+  color: var(--accent-2);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+}
+
+h1 {
+  margin: 0.25rem 0 0.75rem;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+}
+
+.hero__spotlight {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  background: rgb(5 11 28 / 55%);
+  border: 1px solid #2b3a66;
+}
+
+.hero__spotlight h2 {
+  margin: 0.3rem 0;
+}
+
+.filters {
+  margin-bottom: 1.2rem;
+}
+
+.filters__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+button {
+  border: 1px solid #3e4f7d;
+  background: #182347;
+  color: var(--text);
+  padding: 0.6rem 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button.is-active {
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #061230;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.movie-card {
+  background: var(--panel);
+  border: 1px solid #334574;
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.movie-card__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-card__vibe,
+.movie-card__rating,
+.movie-card__meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.movie-card h3 {
+  margin: 0.1rem 0;
+}
+
+.movie-card button {
+  margin-top: auto;
+}
