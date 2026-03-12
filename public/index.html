@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App Realtime</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>🎬 Movie App</h1>
+      <p>Add a movie and watch updates stream in realtime.</p>
+
+      <form id="movie-form">
+        <input id="title" name="title" placeholder="Movie title" required />
+        <input id="year" name="year" type="number" placeholder="Year" min="1888" />
+        <button type="submit">Add Movie</button>
+      </form>
+
+      <ul id="movies"></ul>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
